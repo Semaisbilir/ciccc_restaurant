@@ -1,0 +1,30 @@
+.landing-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 70vh;
+}
+
+.section-primary {
+    background-image: url("/images/backgrounds/Hero.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.landing-title {
+    font-family: 'Playfair Display 400';
+    font-size: 8rem;
+    color: var(--text-black);
+    text-align: center;
+    max-width: 80%;
+}
+
+.landing-subtitle {
+    font-family: 'Playfair Display 400';
+    font-size: 2rem;
+    color: var(--text-black);
+    text-align: center;
+    max-width: 80%;
+}

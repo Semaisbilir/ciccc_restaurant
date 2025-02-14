@@ -1,21 +1,64 @@
+@import url("https://fonts.googleapis.com/css2?family=Your+Font+Family&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 :root {
   --background: #ffffff;
-  --foreground: #171717;
+  --foreground: #474747;
+  --primary-color: #2C2F24;
+  --secondary-color: #AD343E;
+  --third-color: #474747;
+  --title-primary: #2C2F24;
+  --subtitle-secondary: #AD343E;
+  --text-white: #FCFCFD;
+  --text-black: #2C2F24;
+  --background-black: #474747;
+  --background-white: #FCFCFD; 
 }
-
+/*
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
+    --background: #474747;
     --foreground: #ededed;
+    --primary-color: #ececec;
+    --secondary-color: #b14952;
+    --third-color: #474747;
+    --title-primary: #2C2F24;
+    --subtitle-secondary: #AD343E;
+    --text-white: #2C2F24;
+    --text-black: #FCFCFD;
+    --background-black: #FCFCFD;
+    --background-white: #474747;
   }
+}
+*/
+
+@font-face {
+    font-family: "Playfair Display 400";
+    src: url("/fonts/Playfair_Display/static/PlayfairDisplay-Regular.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Playfair Display 700";
+    src: url("/fonts/Playfair_Display/static/PlayfairDisplay-Bold.ttf") format("truetype");
+    font-weight: 700;
+    font-style: normal;
 }
 
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+    color: var(--foreground);
+    background: var(--background);
+    font-family: "Playfair Display 400", sans-serif;
+}
+
+.text-black {
+    color: var(--text-black) !important;
+}
+
+.text-white {
+    color: var(--text-white) !important;
 }

@@ -3,25 +3,48 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev --turbopack",
-    "build": "next build",
+    "dev": "next dev",
+    "build": "prisma generate && next build --no-lint",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "ngrok": "ngrok http --url=composed-repeatedly-magpie.ngrok-free.app 3000",
+    "nextJs": "next dev --turbopack"
   },
   "dependencies": {
-    "react": "^19.0.0",
-    "react-dom": "^19.0.0",
-    "next": "15.1.6"
+    "@clerk/nextjs": "^6.11.2",
+    "@clerk/themes": "^2.2.17",
+    "@contentful/rich-text-react-renderer": "^16.0.1",
+    "@prisma/client": "^6.3.1",
+    "@stripe/stripe-js": "^2.0.0",
+    "concurrently": "^9.1.2",
+    "contentful": "^11.4.6",
+    "lucide-react": "^0.475.0",
+    "mongodb": "^6.13.0",
+    "next": "14.1.0",
+    "prisma": "^6.3.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-hot-toast": "^2.5.1",
+    "react-icons": "^5.4.0",
+    "stripe": "^14.0.0",
+    "svix": "^1.45.1"
   },
   "devDependencies": {
-    "typescript": "^5",
+    "@eslint/eslintrc": "^3",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
-    "postcss": "^8",
-    "tailwindcss": "^3.4.1",
+    "autoprefixer": "^10.4.20",
     "eslint": "^9",
     "eslint-config-next": "15.1.6",
-    "@eslint/eslintrc": "^3"
-  }
+    "json-server": "^1.0.0-beta.3",
+    "postcss": "^8.5.2",
+    "tailwindcss": "^3.4.17",
+    "typescript": "^5"
+  },
+  "description": "Create **NextCommerce**, a modern, authentication-protected platform using **Next.js 15**, **Clerk**, and **Contentful CMS**. Users can browse featured items publicly and access the full catalog upon authentication. This project will test your ability to work with **authentication, CMS integration, and protected routes** while ensuring a seamless and visually appealing user experience.",
+  "main": "index.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
 }

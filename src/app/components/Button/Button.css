@@ -1,0 +1,27 @@
+.button-primary {
+    padding: 20px 14px;
+    background-color: var(--primary-color);
+    color: var(--text-white);
+    border-radius: 50px;
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+    cursor: pointer;
+    width: 200px;
+}
+
+.button-secondary {
+    padding: 20px 14px;
+    background-color: var(--secondary-color);
+    color: var(--text-white);
+    border-radius: 50px;
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+    cursor: pointer;
+    width: 200px;
+}
+
+.button-secondary-sm {
+    padding: 6px 10px;
+}
