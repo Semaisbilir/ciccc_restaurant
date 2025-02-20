@@ -11,7 +11,7 @@
 }
 
 .button-secondary {
-    padding: 20px 14px;
+    padding: 20px 15px;
     background-color: var(--secondary-color);
     color: var(--text-white);
     border-radius: 50px;
